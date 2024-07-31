@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --blue: dodgerblue;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Header e nav */
+
+header{
+    background-image: url(../img/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    font-size: 2rem;
+}
+
+header div h1{
+    text-shadow: 3px 1px var(--black);
+    color: var(--white);
+    font-size: 3rem;
+}
+
+nav{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    font-size: x-large;
+    min-height: calc(100vh - 14.4rem);
+    margin: 1.5rem;
+}
+
+main div{
+    padding-bottom: 2rem;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: var(--blue);
+    color: white;
+    align-items: center;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* inicio */
+
+div.apresentacao{
+    text-align:justify;
+}
+
+div.apresentacao, div.atuacao, div.modalidades{
+    font-size: 1.9rem;
+}
+
+/* Tabela */
+
+span.curso{
+    display: flex;
+    justify-content: center;
+}
+
+table, tr, td{
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+    margin: 2rem;
+}
+
+td.materia{
+    text-align: start;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr td b{
+    display: flex;
+    justify-content: center;
+}
+
+table tr td{
+    padding: 5px;
+    text-align: center;
+}
+
+/* faq */
+
+#topo div.pergunta, p.resposta{
+    min-height: 100vh;
+    color: #000000;   
+}
+
+div.pergunta a, p.resposta a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+div.pergunta{
+    font-size: 2rem;
+}
+
+p.resposta{
+    display: grid;
+    font-size: 1.5rem;
+    margin-top: 0.5rem ;
+}
+
+/* contato */
+
+fieldset{
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+fieldset div{
+    padding: 0.5rem;
+}
+textarea{
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+div.botoes{
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-style: outset;
+    padding: 2px;
+    font-size: 20px;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background-color: dodgerblue;
+}
+button:active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+button {
+    margin-bottom: 5px;
+    margin: 5px;
+}  
+.botao1 {
+    border-radius: 50%;
+}  
+.botao2 {
+    border-radius: 50%;
+}
